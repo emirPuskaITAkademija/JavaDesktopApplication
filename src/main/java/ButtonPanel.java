@@ -35,24 +35,25 @@ public class ButtonPanel extends JPanel {
     }
 
     private JButton createButton(String labela, String iconName, String actionCommand, int mnemonic){
-        ImageIcon imageIcon = createImageIcon(iconName);
+        ImageIconLoader imageIconLoader = new ImageIconLoader(iconName);
+        ImageIcon imageIcon = imageIconLoader.loadImageIcon();
         JButton button = new JButton(labela, imageIcon);
         button.setActionCommand(actionCommand);
         button.setMnemonic(mnemonic);
         return button;
     }
 
-    private ImageIcon createImageIcon(String iconName){
-        URL imageAddress = ButtonPanel.class.getResource(iconName);
-        System.out.println(imageAddress);
-        if(imageAddress != null){
-            ImageIcon imageIcon = new ImageIcon(imageAddress);
-            return imageIcon;
-        }else{
-            System.err.println("Ne mogu učitati sliku...");
-            return null;
-        }
-    }
+//    private ImageIcon createImageIcon(String iconName){
+//        URL imageAddress = ButtonPanel.class.getResource(iconName);
+//        System.out.println(imageAddress);
+//        if(imageAddress != null){
+//            ImageIcon imageIcon = new ImageIcon(imageAddress);
+//            return imageIcon;
+//        }else{
+//            System.err.println("Ne mogu učitati sliku...");
+//            return null;
+//        }
+//    }
 
     private void middleButtonAction(ActionEvent e){
         if("DISABLE".equals(e.getActionCommand())){

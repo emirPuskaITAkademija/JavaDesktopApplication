@@ -15,8 +15,9 @@ public class ButtonDemo {
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("Demonstracija upotrebe dugmića");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        ButtonPanel buttonPanel = new ButtonPanel();
-        frame.setContentPane(buttonPanel);
+//        ButtonPanel buttonPanel = new ButtonPanel();
+        CheckBoxPanel checkBoxPanel = new CheckBoxPanel();
+        frame.setContentPane(checkBoxPanel);
         frame.pack();
         frame.setVisible(true);
     }
