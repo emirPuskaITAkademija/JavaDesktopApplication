@@ -1,11 +1,18 @@
-import javax.swing.*;
-import java.awt.*;
+package one;
+
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.KeyEvent;
 
 /**
- * <li>1. Container ... JPanel, CheckBoxPanel</li>
+ * <li>1. Container ... JPanel, one.CheckBoxPanel</li>
  * <li>2. UI controls ... JButton, JCheckBox</li>
  * <li>3. LayoutManager....FlowLayout, BorderLayout, GridLayout</li>
  */

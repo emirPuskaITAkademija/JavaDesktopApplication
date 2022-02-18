@@ -1,8 +1,12 @@
-import javax.swing.*;
+package one;
+
+import javax.swing.AbstractButton;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.net.URL;
 
 /**
  * Container tipa JPanel.
@@ -44,7 +48,7 @@ public class ButtonPanel extends JPanel {
     }
 
 //    private ImageIcon createImageIcon(String iconName){
-//        URL imageAddress = ButtonPanel.class.getResource(iconName);
+//        URL imageAddress = one.ButtonPanel.class.getResource(iconName);
 //        System.out.println(imageAddress);
 //        if(imageAddress != null){
 //            ImageIcon imageIcon = new ImageIcon(imageAddress);

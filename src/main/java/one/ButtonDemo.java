@@ -1,4 +1,8 @@
-import javax.swing.*;
+package one;
+
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 
 /**
  * <li>1. Container(JFrame, JPanel, )</li>
@@ -15,7 +19,7 @@ public class ButtonDemo {
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("Demonstracija upotrebe dugmića");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-//        ButtonPanel buttonPanel = new ButtonPanel();
+//        one.ButtonPanel buttonPanel = new one.ButtonPanel();
         CheckBoxPanel checkBoxPanel = new CheckBoxPanel();
         frame.setContentPane(checkBoxPanel);
         frame.pack();
