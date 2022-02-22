@@ -23,7 +23,7 @@ public class ComboBoxPanel extends JPanel implements ActionListener {
             animals.add(animal.getAnimalName());
         }
         JComboBox<String> animalComboBox = new JComboBox<String>(animals);
-        animalComboBox.setEditable(true);
+        animalComboBox.setEditable(false);
         animalComboBox.setSelectedItem(AnimalEnum.RABBIT.getAnimalName());
         animalComboBox.addActionListener(this);
         add(animalComboBox, BorderLayout.PAGE_START);
