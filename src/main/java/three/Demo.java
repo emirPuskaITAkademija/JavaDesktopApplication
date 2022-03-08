@@ -26,7 +26,7 @@ public class Demo {
         JFrame frame = new JFrame();
         frame.setTitle("Demo GUI");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        JPanel container = new CustomComboBoxPanel();
+        JPanel container = new CheckBoxPanel();
         container.setOpaque(true);
         frame.setContentPane(container);
         frame.pack();

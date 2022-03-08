@@ -1,0 +1,36 @@
+*{
+    color: blue;
+}
+label {
+    color: darkred;
+}
+
+h2 {
+    color: darkred;
+}
+p{
+    font-family: Verdana;
+    font-size: 10px;
+    color: darkred;
+}
+
+#registracijskiNaslov{
+    color: blueviolet;
+}
+
+.fullName{
+    color: chartreuse;
+    font-size: 45px;
+}
+
+h5{
+    border: 1px solid green;
+}
+
+h5>p{
+    color: darkgreen;
+    font-size: 8px;
+}
+p~label{
+    font-size: 49px;
+}
