@@ -1,0 +1,19 @@
+
+p.duplaLinija{
+    border-style: double;
+    padding: 25px 10px 25px 10px;
+    margin: 15px;
+    width: 50%;
+    color: ghostwhite;
+    /*background-color: rgb(255, 0, 0);*/
+    /*background-color: #FF0000;*/
+    /*background-color: hsl(0, 100%, 50%);*/
+    background-color: rgba(255, 0, 0, 50%);
+}
+
+body{
+    background-image: url("../images/images.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

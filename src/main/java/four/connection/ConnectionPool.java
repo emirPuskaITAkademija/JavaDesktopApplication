@@ -6,10 +6,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * SINGLETON : način da dizajniramo klasu.
+ * <p>
+ *
+ * </p>
+ */
 public class ConnectionPool {
     private final static int MAX_CONNECTIONS = 10;
 
-    private static ConnectionPool INSTANCE;
+    private static ConnectionPool INSTANCE = null;
 
     public static ConnectionPool getINSTANCE() {
         if(INSTANCE == null){

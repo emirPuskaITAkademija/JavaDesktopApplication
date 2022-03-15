@@ -2,6 +2,19 @@ package four;
 
 import javax.swing.table.AbstractTableModel;
 
+/**
+ * JTable
+ * <li>
+ *     <li>String[] columnNames
+ *     <li>Object[][] data
+ * </li>
+ *
+ * <li>
+ *
+ * </li>
+ *
+ *
+ */
 class MyTableDataModel extends AbstractTableModel {
     //KOLONE
     private final String[] columnNames = {"Name", "Surname", "Sport", "Years in sport", "Vegetarian"};

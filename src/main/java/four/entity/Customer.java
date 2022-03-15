@@ -2,6 +2,12 @@ package four.entity;
 
 import java.time.LocalDate;
 
+/**
+ * Ova klasa predstavlja customers strukturu tabele.
+ *
+ * <DB>   customers </DB>
+ * <JavaApplication> Customer</JavaApplication>
+ */
 public class Customer {
 
     private Integer customerId;
@@ -84,5 +90,20 @@ public class Customer {
 
     public void setPoints(Integer points) {
         this.points = points;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerId=" + customerId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthdate=" + birthdate +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", points=" + points +
+                '}';
     }
 }
