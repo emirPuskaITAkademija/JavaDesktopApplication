@@ -14,13 +14,13 @@ import java.util.List;
  */
 public interface Dao<E>{
 
-    void save(E entity) throws SQLException;
+    void save(E entity) ;
 
-    List<E> getAll() throws SQLException;
+    List<E> getAll() ;
 
-    E get(Integer primaryKey) throws SQLException;
+    E get(Integer primaryKey) ;
 
-    void update(E entity) throws SQLException;
+    void update(E entity);
 
-    void delete(E entity) throws SQLException;
+    void delete(E entity);
 }

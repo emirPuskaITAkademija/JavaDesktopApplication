@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstracija forme</title>
+</head>
+<body>
+    <h2>Demonstration of form usage</h2>
+    <p>Uskoro ćete vidjeti kako kreirati slider preko input type elementa</p>
+    <form oninput="x.value=parseInt(x1.value)+parseInt(x2.value)">
+        0 <input type="range" id="x1" name="x1" value="50"> 100  +
+        <input type="number" id="x2" name="x2" value="50">
+        = <output name="x" for="x1 x2"></output>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

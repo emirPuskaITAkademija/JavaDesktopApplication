@@ -13,12 +13,12 @@ import java.util.List;
 
 public class CustomerDao implements Dao<Customer> {
     @Override
-    public void save(Customer entity) throws SQLException {
+    public void save(Customer entity)  {
 
     }
 
     @Override
-    public List<Customer> getAll() throws SQLException {
+    public List<Customer> getAll()  {
         List<Customer> customers = new ArrayList<>();
         String sql = "SELECT * FROM customers";
         //1.
@@ -46,7 +46,7 @@ public class CustomerDao implements Dao<Customer> {
     }
 
     @Override
-    public Customer get(Integer primaryKey) throws SQLException {
+    public Customer get(Integer primaryKey)  {
         String sql = "SELECT * FROM customers WHERE customer_id=?";
         Connection connection = ConnectionPool.getINSTANCE().getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -72,7 +72,7 @@ public class CustomerDao implements Dao<Customer> {
     }
 
     @Override
-    public void update(Customer entity) throws SQLException {
+    public void update(Customer entity)  {
         String sql = "UPDATE customers SET first_name=?,last_name=? WHERE customer_id=?";
         Connection connection = ConnectionPool.getINSTANCE().getConnection();
         try(PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -82,12 +82,14 @@ public class CustomerDao implements Dao<Customer> {
             preparedStatement.setInt(3, entity.getCustomerId());
             int numberAffectedRows = preparedStatement.executeUpdate();
             System.out.println("Broj ažuriranih redova: " + numberAffectedRows);
+        }catch (SQLException e){
+            throw new RuntimeException(e.getMessage());
         }
         ConnectionPool.getINSTANCE().releaseConnection(connection);
     }
 
     @Override
-    public void delete(Customer entity) throws SQLException {
+    public void delete(Customer entity)  {
 
     }
 
