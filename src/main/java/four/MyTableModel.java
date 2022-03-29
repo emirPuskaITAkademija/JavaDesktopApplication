@@ -22,7 +22,15 @@ class MyTableDataModel extends AbstractTableModel {
     private final Object[][] data = {
             {"Ismar", "Kozica", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
             {"Neila", "Hasanović", "Odbojka", Integer.valueOf(2), Boolean.valueOf(true)},
-            {"Ismar", "Kozica", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)}
+            {"Ajla", "Reiz", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Sead", "Bander", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ismar", "Aganović", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ahmed", "Herić", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ismar", "Hubijar", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ismar", "Puškić", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ismar", "Grabovica", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ismar", "Hot", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)},
+            {"Ismar", "Bajrović", "Fudbal", Integer.valueOf(12), Boolean.valueOf(false)}
 
     };
 
